@@ -5,7 +5,7 @@ export function Projects() {
   return (
     <section id="proyectos" className="max-w-[1040px] mx-auto px-6 md:px-8 pb-[120px]">
       <div className="flex items-baseline gap-4 mb-12">
-        <h2 className="font-mono text-sm font-semibold uppercase tracking-[0.12em] text-brand-highlight m-0">
+        <h2 className="font-display text-sm font-medium uppercase tracking-[0.05em] text-brand-highlight m-0">
           Proyectos
         </h2>
         <div className="flex-1 h-px bg-brand-highlight/25" />
@@ -49,7 +49,7 @@ export function Projects() {
               <div
                 className={`p-8 md:p-11 flex flex-col gap-5 ${imageOnRight ? "md:order-1" : ""}`}
               >
-                <span className="font-mono text-xs text-brand-highlight tracking-[0.08em]">
+                <span className="text-xs text-brand-highlight tracking-[0.08em]">
                   CASE STUDY · {project.id} · {project.company.toUpperCase()}
                 </span>
                 <h3 className="font-display text-[27px] font-bold tracking-[-0.01em] leading-[1.2] m-0">
@@ -68,7 +68,7 @@ export function Projects() {
                   {project.stack.map((tech) => (
                     <span
                       key={tech.name}
-                      className="inline-flex items-center gap-2 font-mono text-[13px] px-[13px] py-[7px] rounded-full border border-brand-highlight/30 bg-brand-bg/35 text-brand-highlight"
+                      className="inline-flex items-center gap-2 text-[13px] px-[13px] py-[7px] rounded-full border border-brand-highlight/30 bg-brand-bg/35 text-brand-highlight"
                     >
                       <tech.icon />
                       {tech.name}

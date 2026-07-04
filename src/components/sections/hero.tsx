@@ -3,13 +3,14 @@ import { personalInfo } from "@/lib/data";
 export function Hero() {
   return (
     <header className="max-w-[1040px] mx-auto px-6 md:px-8 pt-[140px] pb-[120px]">
-      <div className="flex flex-col gap-7 animate-fade-up">
-        <p className="font-mono text-base text-brand-highlight m-0">Hola, soy</p>
+      <div className="flex flex-col items-center text-center gap-7 animate-fade-up">
+        <p className="text-base text-brand-highlight m-0">Hola, soy</p>
 
         <h1
-          className="font-display font-bold m-0 text-[clamp(44px,7vw,76px)] leading-[1.02] tracking-[-0.03em] bg-[linear-gradient(90deg,#FBE4D8_0%,#FBE4D8_35%,#854F6C_50%,#FBE4D8_65%,#FBE4D8_100%)] bg-[length:200%_100%] bg-clip-text text-transparent animate-name-sweep"
+          className="font-display m-0 text-[clamp(56px,10vw,112px)] leading-[1.02] tracking-[-0.03em] bg-[linear-gradient(90deg,#FBE4D8_0%,#FBE4D8_35%,#854F6C_50%,#FBE4D8_65%,#FBE4D8_100%)] bg-[length:200%_100%] bg-clip-text text-transparent animate-name-sweep"
         >
-          {personalInfo.name}
+          <span className="block font-bold">Micaela</span>
+          <span className="block font-light italic">Vázquez</span>
         </h1>
 
         <p className="text-[22px] font-medium text-brand-highlight m-0">
@@ -20,7 +21,7 @@ export function Hero() {
           {personalInfo.tagline}
         </p>
 
-        <div className="flex gap-3.5 mt-2">
+        <div className="flex justify-center gap-3.5 mt-2">
           <a
             href={personalInfo.github}
             target="_blank"

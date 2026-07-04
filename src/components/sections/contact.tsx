@@ -1,3 +1,4 @@
+import { CopyEmail } from "@/components/copy-email";
 import { personalInfo } from "@/lib/data";
 
 export function Contact() {
@@ -8,12 +9,12 @@ export function Contact() {
           Hablemos<span className="text-brand-highlight">.</span>
         </h2>
         <div className="flex flex-wrap gap-7 text-base">
-          <a
-            href={`mailto:${personalInfo.email}`}
-            className="text-brand-cream no-underline border-b border-brand-accent pb-0.5 hover:text-brand-highlight hover:border-brand-highlight transition-colors"
+          <CopyEmail
+            email={personalInfo.email}
+            className="text-brand-cream border-b border-brand-accent pb-0.5 hover:text-brand-highlight hover:border-brand-highlight transition-colors"
           >
             {personalInfo.email}
-          </a>
+          </CopyEmail>
           <a
             href={personalInfo.github}
             target="_blank"
@@ -31,7 +32,7 @@ export function Contact() {
             LinkedIn ↗
           </a>
         </div>
-        <p className="font-mono text-xs text-brand-accent m-0">
+        <p className="text-xs text-brand-accent m-0">
           © 2026 Micaela Vázquez · Buenos Aires, Argentina
         </p>
       </div>
