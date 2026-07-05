@@ -1,3 +1,4 @@
+import { SparkleEmitter } from "@/components/name-sparkles";
 import { personalInfo } from "@/lib/data";
 
 export function Hero() {
@@ -6,11 +7,25 @@ export function Hero() {
       <div className="flex flex-col items-center text-center gap-7 animate-fade-up">
         <p className="text-base text-brand-highlight m-0">Hola, soy</p>
 
-        <h1
-          className="font-display m-0 text-[clamp(56px,10vw,112px)] leading-[1.02] tracking-[-0.03em] bg-[linear-gradient(90deg,#FBE4D8_0%,#FBE4D8_35%,#854F6C_50%,#FBE4D8_65%,#FBE4D8_100%)] bg-[length:200%_100%] bg-clip-text text-transparent animate-name-sweep"
-        >
-          <span className="block font-bold">Micaela</span>
-          <span className="block font-light italic">Vázquez</span>
+        <h1 className="font-display m-0 text-[clamp(56px,10vw,112px)] leading-[1.02] tracking-[-0.03em]">
+          <span className="block">
+            <span className="relative inline-block">
+              <span className="font-bold bg-[linear-gradient(90deg,#FBE4D8_0%,#FBE4D8_35%,#854F6C_50%,#FBE4D8_65%,#FBE4D8_100%)] bg-[length:200%_100%] bg-clip-text text-transparent animate-name-sweep">
+                Micaela
+              </span>
+              <SparkleEmitter side="left" />
+              <SparkleEmitter side="right" />
+            </span>
+          </span>
+          <span className="block">
+            <span className="relative inline-block">
+              <span className="font-light italic pr-[0.12em] -mr-[0.12em] bg-[linear-gradient(90deg,#FBE4D8_0%,#FBE4D8_35%,#854F6C_50%,#FBE4D8_65%,#FBE4D8_100%)] bg-[length:200%_100%] bg-clip-text text-transparent animate-name-sweep">
+                Vázquez
+              </span>
+              <SparkleEmitter side="left" />
+              <SparkleEmitter side="right" />
+            </span>
+          </span>
         </h1>
 
         <p className="text-[22px] font-medium text-brand-highlight m-0">

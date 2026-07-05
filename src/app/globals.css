@@ -7,7 +7,9 @@
   --color-brand-accent: #854f6c;
   --color-brand-highlight: #dfb6b2;
   --color-brand-cream: #fbe4d8;
+}
 
+@theme inline {
   --font-body: var(--font-geist);
   --font-display: var(--font-space-grotesk);
 }
@@ -99,6 +101,20 @@ body {
   }
   50% {
     transform: translate(18vw, -35vh) scale(1.4);
+  }
+}
+
+@keyframes sparkle-drift {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.3);
+  }
+  12% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--dx), var(--dy)) scale(1);
   }
 }
 
